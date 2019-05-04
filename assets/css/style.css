@@ -1,0 +1,91 @@
+#title {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    color: green;
+    font-style: italic;
+}
+
+#results-table th,
+td {
+  display: inline-block;
+  width: 16.575%;
+}
+
+.card-header {
+    background-color: lightgray;
+    color: black;
+}
+
+body {
+background: url("../images/restaurant_icons.png");
+}
+
+#spacer {
+  padding-top: 140px;
+  height: 140px;
+}
+
+
+#displayPref{
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+flex-wrap: nowrap;
+align-items: center;
+}
+
+#names, #figures {
+padding-left: 20px;
+}
+
+nav {
+  background-color: #5b90d6;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-brand {
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight:bold; 
+  font-size: 30px;
+}
+
+.pref {
+  font-size: 20px;
+   color: gray;
+}
+
+.disp {
+  font-size: 20px;
+   color: black;
+}
+
+.prefbut {
+  font-size: 20px;
+}
+
+td {
+  font-weight: bold;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Happy Healthy Tummies | Your Info</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
+</head>
+
+
+<body>
+    <header>
+
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand text-center" href="#">Happy
+
+                    Healthy Tummies</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Logout &ensp;|</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="preferences.html">Preferences &ensp;|</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dashboard.html">Search</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <div class="container" id="prefContainer">
+        <div class="row justify-content-center h-100 align-items-center">
+            <div class="col-md-6 align-items-center">
+                <div class="card card-signin my-5">
+                    <div class="card-body">
+                        <h2 class="card-title text-center" style="font-weight:bold; font-size: 25px; ">Enter your
+                            preferences below<br><br>
+                            <form class="box">
+                                <div class="form-group pref">
+                                  <label for="calories">Calories:</label>
+
+                                    <input type="text" class="form-control" id="caloriesInput" placeholder="Enter your desired calories here"
+                                        required />
+                                </div>
+                                <div class="form-group pref">
+
+                                    <label for="carbs">Carbs:</label>
+
+                                    <input type="text" class="form-control" id="carbsInput" placeholder="Enter your desired carbohydrates here"
+                                        required />
+                                </div>
+                                <div class="form-group pref">
+
+                                    <label for="protein">Protein:</label>
+
+                                    <input type="text" class="form-control" id="proteinInput" placeholder="Enter your desired protein here"
+                                        required />
+                                </div>
+                                <div class="form-group pref">
+
+                                    <label for="sugars">Sugars:</label>
+                                    <input type="text" class="form-control" id="sugarInput" placeholder="Enter your desired sugar here"
+                                        required />
+                                </div>
+                                <button class="btn btn-lg btn-primary btn-block text-uppercase prefbut"
+                                    id="prefSubmit">Submit</button>
+                                <button class="btn btn-lg btn-primary btn-block text-uppercase prefbut"
+
+                                    id="prefExist">Use Existing</button>
+                            </form>
+                            <div class="alert alert-light" role="alert" id="errorText"></div>
+                        </h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <p class="text-muted col-md-3 text-center"><strong>Powered by:</strong><a href="http://www.nutritionix.com/api"><img
+                            src="https://d2eawub7utcl6.cloudfront.net/images/poweredby_nutritionix_api.png"></a></p>
+                <p class="text-muted col-md-3 text-center"><a href="https://www.mapquest.com/"><img src="https://developer.mapquest.com/documentation/assets/img/logos/logo-black-md.png" /></a></p>
+                <p class="text-muted col-md-3 text-center">OpenStreetMap - Geodata copyright <a href="https://www.openstreetmap.org">OpenStreetMap</a>
+                    contributors</p>
+                <p class="text-muted col-md-3 text-center"><a href="https://firebase.google.com/">Firebase:
+                        Google</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/javascript/preferences.js"></script>
+
+
+</body>

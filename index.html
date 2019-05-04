@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Happy Healthy Tummies | Sign In/New Account</title>
+    <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet" type="text/css" />
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+
+            <div class="container">
+                <a class="navbar-brand text-center" href="#">Happy Healthy Tummies</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Login &ensp;|</a>
+                        </li>
+                        <li class="nav-item d-none">
+                            <a class="nav-link" href="preferences.html">Preferences &ensp;|</a>
+                        </li>
+                        <li class="nav-item d-none">
+                            <a class="nav-link" href="dashboard.html">Search</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container" id="loginContainer">
+        <div class="row justify-content-center h-100 align-items-center">
+            <div class="col-md-4 align-items-center">
+                <div class="row" id="spacer"> </div>
+                <div class="card card-signin my-5">
+                    <div class="card-body">
+
+                        <h2 class="card-title text-center">Sign into your<br>account here</h2>
+
+                        <div class="box" id="firebaseui-auth-container"></div>
+                        <div class="form-group d-none signIn">
+                            <label for="usernameInput">Email:</label>
+                            <input type="text" class="form-control" id="emailSignIn" placeholder="Enter your email here">
+                        </div>
+                        <div class="form-group d-none signIn">
+                            <label for="passwordInput">Password:</label>
+                            <input type="password" class="form-control" id="passwordSignIn" placeholder="Enter your password here">
+                        </div>
+                        <div class="form-group d-none register">
+                            <label for="usernameInput">Email:</label>
+                            <input type="text" class="form-control" id="emailRegister" placeholder="Enter your email here">
+                        </div>
+                        <div class="form-group d-none register">
+                            <label for="passwordInput">Password:</label>
+                            <input type="password" class="form-control" id="passwordRegister" placeholder="Enter your password here">
+                            <h9>Must be at least six characters</h9>
+                        </div>
+                        <button class="btn btn-lg btn-primary btn-block text-uppercase signIn d-none" id="signInSubmit">Sign
+                            In - Submit</button>
+                        <button class="btn btn-lg btn-google btn-block text-uppercase register d-none" id="registerSubmit">Register
+                            - Submit</button>
+                        <button class="btn btn-lg btn-primary btn-block text-uppercase" id="signInOpen">Sign in</button>
+                        <button class="btn btn-lg btn-google btn-block text-uppercase" id="registerOpen">Register</button>
+                    </div>
+                    <div class="alert alert-light" role="alert" id="errorText"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <p class="text-muted col-md-3 text-center"><strong>Powered by:</strong><a href="http://www.nutritionix.com/api"><img
+                            src="https://d2eawub7utcl6.cloudfront.net/images/poweredby_nutritionix_api.png"></a></p>
+                <p class="text-muted col-md-3 text-center"><a href="https://www.mapquest.com/"><img src="https://developer.mapquest.com/documentation/assets/img/logos/logo-black-md.png" /></a></p>
+                <p class="text-muted col-md-3 text-center">OpenStreetMap - Geodata copyright <a href="https://www.openstreetmap.org">OpenStreetMap</a>
+                    contributors</p>
+                <p class="text-muted col-md-3 text-center"><a href="https://firebase.google.com/">Firebase: Google</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://www.gstatic.com/firebasejs/5.7.2/firebase.js"></script>
+    <script src="assets/javascript/login.js"></script>
+
+
+</body>
+
+</html>
